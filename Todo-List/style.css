@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
 
     font-family: Arial, sans-serif;
 
@@ -18,59 +19,121 @@ body{
     height: 100vh;
 
 }
-.container{
+
+.container {
+
+    width: 400px;
 
     background-color: white;
 
     padding: 30px;
-
-    width: 400px;
 
     border-radius: 10px;
 
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 
 }
-h1{
 
-    text-align:center;
+h1 {
 
-    margin-bottom:20px;
+    text-align: center;
 
-}
-.input-section{
-
-    display:flex;
-
-    gap:10px;
+    margin-bottom: 20px;
 
 }
-input{
 
-    flex:1;
+.input-section {
 
-    padding:10px;
+    display: flex;
 
-    font-size:16px;
-
-}
-button{
-
-    padding:10px 20px;
-
-    background-color:#007bff;
-
-    color:white;
-
-    border:none;
-
-    border-radius:5px;
-
-    cursor:pointer;
+    gap: 10px;
 
 }
-button:hover{
 
-    background-color:#0056b3;
+input {
+
+    flex: 1;
+
+    padding: 10px;
+
+    font-size: 16px;
+
+}
+
+button {
+
+    padding: 10px 20px;
+
+    background-color: royalblue;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+button:hover {
+
+    background-color: blue;
+
+}
+
+#taskList {
+
+    list-style: none;
+
+    margin-top: 20px;
+
+}
+
+#taskList li {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: #f8f8f8;
+
+    padding: 10px;
+
+    margin-bottom: 10px;
+
+    border-radius: 5px;
+
+}
+
+#taskList li button {
+
+    background-color: crimson;
+
+    padding: 6px 10px;
+
+}
+
+#taskList li button:hover {
+
+    background-color: darkred;
+
+}
+
+#taskList span {
+
+    cursor: pointer;
+
+}
+
+.completed {
+
+    text-decoration: line-through;
+
+    color: gray;
+
+    opacity: 0.7;
 
 }
