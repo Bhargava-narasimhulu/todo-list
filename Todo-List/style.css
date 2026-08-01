@@ -7,24 +7,19 @@
 body {
 
     font-family: Arial, sans-serif;
-
     background-color: #f4f4f4;
 
     display: flex;
-
     justify-content: center;
-
     align-items: center;
 
     height: 100vh;
-
 }
 
 .container {
 
     width: 400px;
-
-    background-color: white;
+    background: white;
 
     padding: 30px;
 
@@ -64,21 +59,21 @@ button {
 
     padding: 10px 20px;
 
-    background-color: royalblue;
-
-    color: white;
-
     border: none;
 
     border-radius: 5px;
 
     cursor: pointer;
 
+    background: royalblue;
+
+    color: white;
+
 }
 
 button:hover {
 
-    background-color: blue;
+    background: blue;
 
 }
 
@@ -108,23 +103,11 @@ button:hover {
 
 }
 
-#taskList li button {
-
-    background-color: crimson;
-
-    padding: 6px 10px;
-
-}
-
-#taskList li button:hover {
-
-    background-color: darkred;
-
-}
-
 #taskList span {
 
     cursor: pointer;
+
+    flex: 1;
 
 }
 
@@ -134,6 +117,20 @@ button:hover {
 
     color: gray;
 
-    opacity: 0.7;
+    opacity: 0.6;
+
+}
+
+#taskList li button {
+
+    background: crimson;
+
+    padding: 6px 10px;
+
+}
+
+#taskList li button:hover {
+
+    background: darkred;
 
 }
