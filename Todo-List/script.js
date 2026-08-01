@@ -6,7 +6,7 @@ addButton.addEventListener("click", addTask);
 
 function addTask() {
 
-    const taskText = taskInput.value;
+    const taskText = taskInput.value.trim();
 
     if (taskText === "") {
         alert("Please enter a task");
@@ -16,6 +16,16 @@ function addTask() {
     const li = document.createElement("li");
 
     li.textContent = taskText;
+
+    const deleteButton = document.createElement("button");
+
+    deleteButton.textContent = "🗑";
+
+    deleteButton.addEventListener("click", function () {
+        li.remove();
+    });
+
+    li.appendChild(deleteButton);
 
     taskList.appendChild(li);
 
